@@ -1,0 +1,74 @@
+@import "components/colores";
+@import "components/maps";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body{
+    background-color: $colorAzu;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.imagenFondo{
+    background-image: url(../assets/img/roman-fondo.png);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    max-width: 100%;
+    height: auto;
+}
+.titulo{
+    background-color: $colorAma;
+    border: 1px solid !important;
+    margin-bottom: 5px;
+    h1{
+        color: $colorAzu;
+    }
+}
+nav{ 
+    background-color: $colorAma;
+
+}
+div{
+    .colorTexto--biografia{
+        color: $colorAma;
+    }
+    .imgAjuste{
+        height: map-get($map: $sizing, $key: heightLarge);
+        width: map-get($map: $sizing, $key: widthLarge);
+        border-radius: 150px;
+    }
+    .colorTexto--fotoIndex{
+        color: $colorAma;
+        font-size: 24px;
+    }
+}
+footer{
+    background-color: $colorAma;
+    font-size: map-get($map: $sizing, $key: fontShort);
+}
+@media screen and (max-width: 768px){
+    .body{
+        background-color: $colorAzu;
+    }
+    .imagenFondo {
+        background-image: url(../assets/img/fondo-cel.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        max-width: 100%;
+        height: auto;
+    }
+    div .imgAjuste{
+        height: map-get($map: $sizing, $key: heightShort);
+        width: map-get($map: $sizing, $key: widthShort);
+    }
+    .imgPosicion{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

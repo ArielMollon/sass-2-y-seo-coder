@@ -1,0 +1,87 @@
+/*distintos sizings hechos en un map para poder llamarlos en el main*/
+/*mixin para darle color a la fuente del navbar*/
+/*mixin con una leve modificacion en la fuente para mostrar que funciona*/
+.colorTexto {
+  font-weight: 650;
+  color: #113383 !important;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #113383 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.imagenFondo {
+  background-image: url(../assets/img/roman-fondo.png);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo {
+  background-color: #f3b229 !important;
+  border: 1px solid !important;
+  margin-bottom: 5px;
+}
+.titulo h1 {
+  color: #113383 !important;
+}
+
+nav {
+  background-color: #f3b229 !important;
+}
+
+div .colorTexto--biografia {
+  color: #f3b229 !important;
+}
+div .imgAjuste {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+div .colorTexto--fotoIndex {
+  color: #f3b229 !important;
+  font-size: 24px;
+}
+
+footer {
+  background-color: #f3b229 !important;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    background-color: #113383 !important;
+  }
+
+  .imagenFondo {
+    background-image: url(../assets/img/fondo-cel.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
+  }
+
+  div .imgAjuste {
+    height: 150px;
+    width: 150px;
+  }
+
+  .imgPosicion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

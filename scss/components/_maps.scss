@@ -1,0 +1,20 @@
+/*distintos sizings hechos en un map para poder llamarlos en el main*/
+$sizing:(
+    widthLarge: 300px,
+    heightLarge: 300px,
+    widthShort: 150px,
+    heightShort: 150px,
+    fontShort: 20px,
+);
+
+/*mixin para darle color a la fuente del navbar*/
+@mixin fontStyle ($style,$color) {
+    font-weight: $style;
+    color: $color !important;
+}
+
+/*mixin con una leve modificacion en la fuente para mostrar que funciona*/
+.colorTexto{
+    @include fontStyle(650,#113383);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
